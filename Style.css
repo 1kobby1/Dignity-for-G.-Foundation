@@ -1,0 +1,191 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    font-size: 1.1em;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('img.pic1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    color: #fff;
+    padding: 1rem 0;
+    background: transparent;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    background: linear-gradient(to right, orange, red, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: blue;
+    border-radius: 8px;
+}
+
+/* Hero section */
+#hero {
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+    background: transparent;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #00008B;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background: #000066;
+    color: #fff;
+}
+
+.donate-btn {
+    background: #2ecc71;
+    margin-left: 1rem;
+}
+
+.donate-btn:hover {
+    background: #27ae60;
+}
+
+/* Sections */
+section {
+    padding: 3rem 0;
+    background: transparent;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #ffff99;
+}
+
+section p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Form */
+form {
+    max-width: 600px;
+    margin: 2rem auto 0;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+    color: #fff;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #333;
+}
+
+form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+form button {
+    margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    background: transparent;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+}
